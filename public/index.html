@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070c17">
+<meta name="description" content="PINPONG TIPS — Analyse. Prédiction. Performance. Plateforme professionnelle de pronostics de tennis de table : historique vérifié, statistiques en temps réel, transparence totale.">
+<title>PINPONG TIPS — Analyse. Prédiction. Performance.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+<link rel="apple-touch-icon" href="/img/logo.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PINPONG TIPS">
+<meta property="og:title" content="PINPONG TIPS — Analyse. Prédiction. Performance.">
+<meta property="og:description" content="Pronostics de tennis de table : historique vérifié, statistiques automatiques, transparence totale.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#/">
+      <img class="brand-mark" src="/img/logo.svg" alt="Logo PINPONG TIPS" width="46" height="46">
+      <span class="brand-text">
+        <b>PINPONG<span>TIPS</span></b>
+        <small>Analyse. Prédiction. Performance.</small>
+      </span>
+    </a>
+    <nav class="nav" id="main-nav">
+      <p class="nav-label">Navigation</p>
+      <a href="#/" data-nav="home"><i>🏠</i><span>Accueil</span></a>
+      <a href="#/matches" data-nav="matches"><i>🏓</i><span>Matchs</span></a>
+      <a href="#/predictions" data-nav="predictions"><i>🎯</i><span>Pronostics</span></a>
+      <a href="#/results" data-nav="results"><i>✅</i><span>Résultats</span></a>
+      <a href="#/stats" data-nav="stats"><i>📊</i><span>Statistiques</span></a>
+      <a href="#/championships" data-nav="championships"><i>🌍</i><span>Championnats</span></a>
+      <a href="#/history" data-nav="history"><i>🗂️</i><span>Historique</span></a>
+      <p class="nav-label">Administration</p>
+      <a href="#/admin" data-nav="admin"><i>🔐</i><span>Tableau de bord</span></a>
+      <a href="#/admin/matches" data-nav="admin-matches"><i>📝</i><span>Gérer les matchs</span></a>
+      <a href="#/admin/championships" data-nav="admin-championships"><i>🌍</i><span>Championnats (gestion)</span></a>
+      <a href="#/admin/journal" data-nav="admin-journal"><i>🧾</i><span>Journal</span></a>
+      <a href="#/admin/settings" data-nav="admin-settings"><i>⚙️</i><span>Réglages</span></a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="philosophy-mini">
+        <b>Nous ne forçons jamais un pronostic.</b>
+        <span>Mieux vaut manquer un match que forcer un mauvais pronostic.</span>
+      </div>
+      <div id="sidebar-user"></div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn only-mobile" id="menu-btn" aria-label="Menu">☰</button>
+      <a class="topbar-brand only-mobile" href="#/"><img src="/img/logo.svg" alt="" width="26" height="26"> <b>PINPONG<span>TIPS</span></b></a>
+      <div class="topbar-spacer"></div>
+      <button class="icon-btn" id="notif-btn" aria-label="Notifications"><span>🔔</span><b id="notif-count" class="dot" hidden></b></button>
+      <div id="topbar-user" class="topbar-user"></div>
+    </header>
+    <main id="view" class="view" tabindex="-1"><div class="loading"><span class="spinner"></span>Chargement…</div></main>
+    <footer class="footer">
+      <span>🏓 <b>PINPONG TIPS</b> — Analyse. Prédiction. Performance.</span>
+      <span class="muted">Les pronostics sont publiés à titre informatif et ne constituent pas un conseil financier. Jouer comporte des risques. 18+</span>
+    </footer>
+  </div>
+</div>
+
+<nav class="tabbar" id="tabbar">
+  <a href="#/" data-nav="home"><i>🏠</i><span>Accueil</span></a>
+  <a href="#/matches" data-nav="matches"><i>🏓</i><span>Matchs</span></a>
+  <a href="#/predictions" data-nav="predictions"><i>🎯</i><span>Tips</span></a>
+  <a href="#/stats" data-nav="stats"><i>📊</i><span>Stats</span></a>
+  <a href="#/profile" data-nav="profile"><i>👤</i><span>Profil</span></a>
+</nav>
+
+<div id="sidebar-backdrop" class="sidebar-backdrop" hidden></div>
+<div id="toasts" class="toasts"></div>
+<div id="drawer" class="drawer" hidden></div>
+
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>

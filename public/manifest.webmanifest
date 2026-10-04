@@ -1,0 +1,23 @@
+{
+  "name": "PINPONG TIPS — Analyse. Prédiction. Performance.",
+  "short_name": "PINPONG TIPS",
+  "description": "Plateforme professionnelle de pronostics de tennis de table : historique vérifié, statistiques en temps réel, transparence totale.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070c17",
+  "theme_color": "#070c17",
+  "categories": ["sports", "statistics", "news"],
+  "icons": [
+    { "src": "/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/img/logo.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "maskable" },
+    { "src": "/img/logo.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Pronostics du jour", "url": "/#/predictions" },
+    { "name": "Statistiques", "url": "/#/stats" },
+    { "name": "Historique", "url": "/#/history" }
+  ]
+}

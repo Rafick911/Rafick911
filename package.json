@@ -1,0 +1,27 @@
+{
+  "name": "pinpong-tips",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PINPONG TIPS — Analyse. Prédiction. Performance. Plateforme professionnelle de pronostics de tennis de table.",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js",
+    "reset": "node server/seed.js --reset",
+    "test": "node tools/smoke-test.js",
+    "shots": "node tools/screenshots.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0"
+  },
+  "optionalDevDependencies_note": "tools/screenshots.js nécessite en plus : npm i --no-save puppeteer-core @sparticuz/chromium"
+}

@@ -1,0 +1,11 @@
+# Dépendances
+node_modules/
+
+# Base de données locale (recréée automatiquement au démarrage)
+data/
+
+# Outils de développement
+*.log
+.DS_Store
+.env
+.env.*
